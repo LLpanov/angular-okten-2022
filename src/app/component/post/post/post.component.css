@@ -1,0 +1,11 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  background: bisque;
+  border: solid black 1px;
+  padding: 0.5rem;
+  font-weight: bold;
+  font-size: large;
+}
+
