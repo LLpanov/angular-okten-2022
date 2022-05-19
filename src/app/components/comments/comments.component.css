@@ -1,0 +1,11 @@
+.containerC {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 10px;
+  column-gap: 5px;
+}
+.flexC {
+  width: 50vw;
+
+}

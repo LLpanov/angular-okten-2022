@@ -1,0 +1,11 @@
+.detailsC{
+  display: flex;
+  flex-direction: column;
+  background: blanchedalmond;
+  row-gap: 5px;
+  padding: 0.6rem;
+  border: black solid 1px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 50vw;
+}
