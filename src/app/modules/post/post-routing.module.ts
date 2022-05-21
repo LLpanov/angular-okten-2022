@@ -6,6 +6,7 @@ import {PostDetailsComponent} from "./components/post-details/post-details.compo
 
 
 const routes: Routes = [
+
   {
     path: '', component: PostsComponent, children: [
       {path: ':id', component: PostDetailsComponent}
