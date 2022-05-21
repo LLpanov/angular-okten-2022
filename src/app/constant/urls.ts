@@ -1,12 +1,12 @@
 import {environment} from "../../environments/environment";
 
-const {API: baseURL} = environment
+const {API} = environment
 
 const urls = {
-  users: `${baseURL}/users`,
-  posts: `${baseURL}/posts`,
-  comments: `${baseURL}/comments`,
-  todos: `${baseURL}/todos`,
+  users: `${API}/users`,
+  posts: `${API}/posts`,
+  comments: `${API}/comments`,
+  todos: `${API}/todos`,
 
 }
 
