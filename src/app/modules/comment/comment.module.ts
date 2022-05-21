@@ -1,14 +1,27 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { CommentRoutingModule } from './comment-routing.module';
+
+import {HttpClientModule} from "@angular/common/http";
+import {CommentService} from "./services";
+import { CommentsComponent } from './components/comments/comments.component';
+import { CommentComponent } from './components/comment/comment.component';
+import { CommentsDetailsComponent } from './components/comments-details/comments-details.component';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    CommentsComponent,
+    CommentComponent,
+    CommentsDetailsComponent
+  ],
   imports: [
     CommonModule,
-    CommentRoutingModule
+    CommentRoutingModule,
+    HttpClientModule
+  ],
+  providers:[
+    CommentService
   ]
 })
 export class CommentModule { }
