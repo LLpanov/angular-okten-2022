@@ -7,6 +7,8 @@ export const urls = {
   posts: `${API}/posts`,
   comments: `${API}/comments`,
   todos: `${API}/todos`,
+  albums: `${API}/albums`,
+  photos: `${API}/photos`,
 
 }
 
