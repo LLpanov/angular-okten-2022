@@ -1,0 +1,34 @@
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {RouterModule, Routes} from "@angular/router";
+
+import {LayoutComponent} from "./layout/layout/layout.component";
+
+const routes: Routes = [
+  {
+    path: '', component: LayoutComponent, children: [
+      {path: '', redirectTo: 'users', pathMatch: 'full'},
+      {path: 'users', loadChildren: () => import('./modules').then(value => value.UserModule)},
+      {path: 'posts', loadChildren: () => import('./modules').then(value => value.PostModule)},
+      {path: 'comments', loadChildren: () => import('./modules').then(value => value.CommentModule)},
+      {path: 'todos', loadChildren: () => import('./modules').then(value => value.TodoModule)},
+      {path: 'albums', loadChildren: () => import('./modules').then(value => value.AlbumModule)},
+      {path: 'photos', loadChildren: () => import('./modules').then(value => value.PhotoModule)},
+
+    ]
+  }
+
+]
+
+@NgModule({
+  declarations: [],
+  imports: [
+    CommonModule,
+    RouterModule.forRoot(routes)
+  ],
+  exports: [
+    RouterModule
+  ]
+})
+export class AppRoutingModule {
+}

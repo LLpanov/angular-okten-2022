@@ -1,0 +1,17 @@
+<div *ngIf="user" class="class3">
+  <p> Id: {{user.id}}</p>
+  <p> Name: {{user.name}}</p>
+  <p> Username: {{user.username}}</p>
+  <p> Email: {{user.email}}</p>
+  <p> Website: {{user.website}}</p>
+  <p> Email: {{user.email}}</p>
+  <p> Street: {{user.address.street}}</p>
+  <p> Suite: {{user.address.suite}}</p>
+  <p> Zip: {{user.address.zipcode}}</p>
+  <p> City: {{user.address.city}}</p>
+  <p> lng: {{user.address.geo.lng}}</p>
+  <p> lat: {{user.address.geo.lat}}</p>
+  <p> Company: {{user.company.name}}</p>
+  <p> Phrase: {{user.company.catchPhrase}}</p>
+  <p> BS: {{user.company.bs}}</p>
+</div>
