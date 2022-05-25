@@ -5,3 +5,56 @@
   list-style: none;
   box-sizing: border-box;
 }
+
+.class1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 10px;
+  column-gap: 5px;
+}
+
+.class2 {
+  display: flex;
+  flex-direction: column;
+  background: blanchedalmond;
+  row-gap: 5px;
+  padding: 0.6rem;
+  border: black solid 1px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.class3 {
+  display: flex;
+  flex-direction: column;
+  background: blanchedalmond;
+  row-gap: 5px;
+  padding: 0.6rem;
+  border: black solid 1px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 50vw;
+}
+
+.class4 {
+  width: 50vw;
+}
+
+.btn {
+  border-color: #3498db;
+  color: black;
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  height: 30px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+
+}
+
+.btn:hover {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
